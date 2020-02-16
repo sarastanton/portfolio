@@ -31,7 +31,6 @@ body {
 /* Navbar */
 .navbar {
 	background: maroon;
-	/* padding: 20px; */
 }
 .navbar .navbar-brand {
 	color: peachpuff;
@@ -55,13 +54,7 @@ body {
 	 -moz-box-shadow:inset 0 -7px 0px 0px salmon;
 	 box-shadow:inset 0 -7px 0px 0px salmon;
 	 background: maroon;
-	 /* border-bottom: 7px solid salmon; */
 }
-
-/* .fixedNav #navigation {
-  position: fixed;
-  top: 0;
-} */
 
 .fancy-text {
 	font-family: 'Allura', cursive;
@@ -207,7 +200,6 @@ body {
 }
 
 #skills h4 {
-	/* font-style: italic; */
 	padding-bottom: 50px;
 }
 
@@ -226,7 +218,6 @@ body {
 
 .logo {
 	max-height: 275px;
-	/* width: 152px; */
 }
 
 
@@ -245,15 +236,6 @@ body {
 	color: mistyrose;
 }
 
-/*
-#header .skills {
-	font-size: 2.75em
-}
-
-#header hr.star:after{
-	color: #e67e22;
-	/* background: #ecf0f1; */
-}
 /*down arrow icon*/
 #slides a {
 	color: mistyrose;
@@ -262,32 +244,6 @@ body {
 #slides-wrapper {
 	max-height: 50%;
 }
-/* #header a:hover { */
-	/* color: orange; */
-/* } */ */
-
-
-
-/* portfolio Styling */
-#portfolio {
-	/* color: #e67e22; */
-}
-/* #portfolio img {
-	height: 260px;
-	width: 360px;
-} */
-/* #portfolio hr.star:after {
-	color: #e67e22;
-	background: white;
-} */
-
-/* #portfolio .portfolio-item {
-	height: 260px;
-	width: 325px;
-	background: #FFF;
-	border-radius: 15px;
-} */
-
 
 #portfolio .portfolio-item img {
 	border-radius: 15px;
@@ -298,47 +254,22 @@ body {
 	width: 325px;
 }
 
-/*Hover effect*/
-/*#portfolio .portfolio-item img:hover {
-	margin: 5px 0;
-	opacity: .7;
-} */
-
-
 /* Contact Styling */
 #contact {
 	font-family:'Lato',sans-serif;
 	color: #34495e;
 	background: seashell;
 }
-#contact h4 {
 
-}
 #contact .has-success .form-control,
 #contact .has-success .control-label {
 	border-color: #344953;
 	color: #344953;
 }
 
-#contact hr.star {
-
-}
-
 #contact hr.star:after {
 	color: #e67e22;
 	background: white;
-}
-
-#contact .btn-social {
-	/* display:inline-block;
-	width:50px;
-	height:50px;
-	border:3px solid #34495e;
-	border-radius:100%;
-	text-align:center;
-	font-size:25px;
-	font-weight:900;
-	line-height:45px; */
 }
 
 #contact i {
@@ -353,21 +284,15 @@ body {
 	color: maroon;
 	vertical-align: middle;
 	line-height: 24px;
-	/* list-style-type: none; */
-
 }
+
 #contact .socials a {
 	padding-left: 15px;
 	color: maroon;
 }
-#contact .socials>li:hover a {
-}
-#contact .socials>li:hover i {
-}
 
 #contact .btn {
 	border-color: #344953;
-	/* color: #344953; */
 }
 
 #contact .btn:focus,
@@ -382,7 +307,6 @@ footer {
 	background: maroon;
 	color: linen;
 	text-align: center;
-	/* position: fixed; */
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -401,82 +325,11 @@ footer p {
   background: rgba(0, 0, 0, 0.4)
 }
 
-/* .slides-title {
-	text-shadow:
-	 -1px -1px 0 mistyrose,
-	 1px -1px 0 mistyrose,
-	 -1px 1px 0 mistyrose,
-	 1px 1px 0 mistyrose;
-}
-
-h2.slides-title {
-	color: mistyrose;
-	text-shadow:
-	 -1px -1px 0 black,
-	 1px -1px 0 black,
-	 -1px 1px 0 black,
-	 1px 1px 0 black;
-} */
-
-/* .slides-navigation .prev,
-.slides-navigation .next {
-  width: 47px;
-  height: 47px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.slides-navigation a.prev {
-  left: 20px;
-  background-image: url(../img/icons/prev.png)
-}
-
-.slides-navigation a.next {
-  right: 20px;
-  background-image: url(../img/icons/next.png)
-} */
-
-/* .titleMessage {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  top: 50%;
-  z-index: 5;
-  text-align: center;
-  margin-top: -100px;
-}
-
-.titleMessage .heading p {
-  color: white;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-  font-weight: 100;
-  letter-spacing: 7px;
-}
-
-.titleMessage .heading .main {
-  font-size: 50px;
-}
-
-.titleMessage .heading .sub p {
-  font-size: 35px;
-  font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
-}
- */
-
-
 /* ==== Media Queries ====*/
 
 /* iPads (Tablets) ----------- */
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 	/* Styles */
-
-	.title {
-
-	}
-
-	.padding {
-
-	}
 
 	#portfolio .portfolio-item {
 		height: 160px;
@@ -495,10 +348,6 @@ h2.slides-title {
 	#portfolio .portfolio-item img:hover {
 		margin: 5px 0;
 		opacity: .7;
-	}
-
-	#contact  {
-
 	}
 
 }
@@ -523,9 +372,7 @@ h2.slides-title {
 
 	#portfolio .portfolio-item {
 		border-radius: 15px;
-		/* height: 200px; */
 		background: #fff;
-
 	}
 
 	#portfolio .portfolio-item img {
@@ -535,24 +382,12 @@ h2.slides-title {
 		display: inline-block;
 	}
 
-	#portfolio .portfolio-item img:hover {
-	}
-
 	#contact .socials>li {
 		margin: 15px 2px;
 	}
 
 	.margin.no_margin_mobile {
 		display: none;
-	}
-
-
-	.contact-form button.pull-right {
-
-	}
-
-	.social-media {
-
 	}
 
 }
