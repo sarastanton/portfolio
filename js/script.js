@@ -72,7 +72,7 @@ $(document).ready(function() {
     if(targetElement != blogLink) {
       e.preventDefault();
       const targetPosition = $(targetElement).offset().top;
-      $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow")
+      $("html, body").animate({ scrollTop: targetPosition + 20 }, "slow")
     }
 
   });
@@ -82,7 +82,7 @@ $(document).ready(function() {
 
     const targetElement = $(this).attr("href");
     const targetPosition = $(targetElement).offset().top;
-    $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
+    $("html, body").animate({ scrollTop: targetPosition + 20 }, "slow");
 
   });
 
@@ -93,15 +93,8 @@ $(document).ready(function() {
 
   function stickyNavigation() {
     const body = $("body");
-
-    if($(window).scrollTop() >= navTop) {
-      body.css("padding-top", nav.outerHeight() + "px");
-      body.addClass("fixedNav");
-    }
-    else {
-      body.css("padding-top", 0);
-      body.removeClass("fixedNav");
-    }
+    body.css("padding-top", 0);
+    body.removeClass("fixedNav");
   }
 
   const copy = () => {
@@ -111,20 +104,5 @@ $(document).ready(function() {
   };
 
   $('footer').text(`${copy()} Sara Stanton ${(new Date()).getFullYear()}`)
-
-
-  // $(window).scroll(function() {
-  //     var position = $(this).scrollTop();
-  //
-  //     $('.section').each(function() {
-  //         var target = $(this).offset().top;
-  //         var id = $(this).attr('id');
-  //
-  //         if (position >= target) {
-  //            $('#navigation > ul > li > a').removeClass('active');
-  //            $('#navigation > ul > li > a[href=#' + id + ']').addClass('active');
-  //        };
-  //     });
-  // });
 
 });
