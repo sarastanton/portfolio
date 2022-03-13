@@ -200,13 +200,18 @@ body {
 	background: seashell;
 }
 
-#skills h4 {
-	padding-bottom: 50px;
-}
-
 .skill {
   text-align: center;
   margin-left: 10px;
+	height: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.skill img {
+	max-width: 240px;
+	margin: auto;
 }
 
 .skill h4 {
