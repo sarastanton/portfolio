@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
 
 body {
@@ -334,23 +334,24 @@ footer p {
 /* ==== Media Queries ====*/
 
 /* iPads (Tablets) ----------- */
-@media only screen and (min-width: 768px) and (max-width : 1024px) {
+@media only screen and (min-width: 600px) and (max-width : 1024px) {
 	/* Styles */
 
 	#portfolio .portfolio-item {
-		height: 160px;
 		background: #FFF;
 		border-radius: 15px;
 	}
 
-	/*Hover effect*/
 	#portfolio .portfolio-item img {
 		border-radius: 15px;
 		margin: 20px 0;
 		opacity: 1;
 		transition: all .3s;
+		height: 200px;
+		width: 200px;
 	}
 
+	/*Hover effect*/
 	#portfolio .portfolio-item img:hover {
 		margin: 5px 0;
 		opacity: .7;
@@ -359,7 +360,7 @@ footer p {
 }
 
 /* Iphone/Android (Small Devices) ----------- */
-@media only screen and (min-width : 320px) and (max-width: 767px) {
+@media only screen and (min-width : 320px) and (max-width: 600px) {
 	/* Styles */
 
 	.title {
@@ -382,8 +383,8 @@ footer p {
 	}
 
 	#portfolio .portfolio-item img {
-		width: 87%;
-		height: 87%;
+		width: 150px;
+		height: 150px;
 		margin: 0 auto;
 		display: inline-block;
 	}
