@@ -389,8 +389,8 @@ footer p {
 	}
 
 	#portfolio .portfolio-item img {
-		width: 150px;
-		height: 150px;
+		/* width: 150px;
+		height: 150px; */
 		margin: 0 auto;
 		display: inline-block;
 	}
