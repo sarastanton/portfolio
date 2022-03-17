@@ -1,10 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family:'Montserrat',sans-serif;
 }
+
 .container.nomargin {
 	margin:0;
 	padding:0;
@@ -18,6 +22,7 @@ body {
 .margin {
 	margin: 30px 0;
 }
+
 .title {
 	font-size:6em;
 	font-family: 'Staatliches', sans-serif;
@@ -235,9 +240,9 @@ body {
 
 /* Header Styling */
 #header {
-	background: seashell;
 	color: #34495e;
 }
+
 #header .icon {
 	font-size: 30px;
 	margin-top: 20px;
@@ -246,6 +251,19 @@ body {
 
 #header i {
 	color: mistyrose;
+}
+
+#slides::before {
+	background-image: url('/img/slide2.jpg');
+	background-size: cover;
+	opacity: 0.6;
+	content: "";
+	position: absolute;
+	top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
 }
 
 /*down arrow icon*/
@@ -264,6 +282,27 @@ body {
 	transition: all .3s;
 	height: 200px;
 	width: 200px;
+}
+
+#chevron-down {
+	font-size: 40pt;
+	color: peachpuff;
+	position: absolute;
+	bottom: 80px;
+	text-shadow: 2px 2px 12px black;
+}
+
+#chevron-down:hover {
+	color: salmon;
+}
+
+#header .tagline {
+  color: mistyrose;
+	text-shadow: 2px 2px 12px black;
+}
+
+#header .title {
+	text-shadow: 2px 2px 12px mistyrose;
 }
 
 /* Contact Styling */
@@ -333,8 +372,8 @@ footer p {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 3;
-  background: rgba(0, 0, 0, 0.4)
+  /* z-index: 3; */
+  background: rgba(0, 0, 0, 0.6)
 }
 
 /* ==== Media Queries ====*/
@@ -370,11 +409,11 @@ footer p {
 	/* Styles */
 
 	.title {
-		font-size:3em;
+		font-size: 3em;
 	}
 
-	.skills {
-		font-size: 1em;
+	.tagline {
+		font-size: 2em;
 	}
 
 	#header .icon {
@@ -389,8 +428,8 @@ footer p {
 	}
 
 	#portfolio .portfolio-item img {
-		width: 150px;
-		height: 150px;
+		/* width: 150px;
+		height: 150px; */
 		margin: 0 auto;
 		display: inline-block;
 	}
