@@ -66,7 +66,6 @@ $(document).ready(function() {
   });
 
   $("#navigation li a").click(function(e) {
-
     const targetElement = $(this).attr("href");
     const blogLink = $('a:contains("Blog")').attr("href");
     if(targetElement != blogLink) {
@@ -74,8 +73,15 @@ $(document).ready(function() {
       const targetPosition = $(targetElement).offset().top;
       $("html, body").animate({ scrollTop: targetPosition + 20 }, "slow")
     }
-
   });
+
+  $("#chevron-down").click((e) => {
+    console.log("click")
+    e.preventDefault();
+    const targetPosition = $("#about").offset().top;
+    $("html, body").animate({ scrollTop: targetPosition + 20 }, "slow")
+  });
+
 
   $(".icon").click(function(e) {
     e.preventDefault();
