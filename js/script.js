@@ -68,10 +68,14 @@ $(document).ready(function() {
   });
 
   $("#chevron-down").click((e) => {
-    console.log("click")
     e.preventDefault();
     const targetPosition = $("#about").offset().top;
     $("html, body").animate({ scrollTop: targetPosition + 20 }, "slow")
+  });
+
+  $(".navbar-brand").click((e) => {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow")
   });
 
 
