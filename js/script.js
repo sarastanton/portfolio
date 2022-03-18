@@ -15,14 +15,6 @@ $(document).ready(function() {
   //Scrollspy plugin
   $('body').scrollspy({ target: '.navbar-spy'});
 
-  // Superslides
-  $('#slides').superslides({
-    animation: 'fade',
-    play: '5000',
-    inherit_height_from: '#slides-wrapper',
-    inherit_width_from: '#slides-wrapper'
-  });
-
   // Owl Carousel
   $('.owl-carousel').owlCarousel({
     loop:true,
